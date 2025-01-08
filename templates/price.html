@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Технологические зависимости!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <canvas id="snowCanvas"></canvas>
+    <script src="static/script.js"></script>
+    <!-- Добавляем шапку сайта -->
+    <header class="header">
+      <!-- Добавляем контейнер -->
+      <div class="container">
+        <!-- Добавляем внутреннюю обёртку для выравнивания логотипа и меню -->
+        <div class="header__inner">
+          <!-- Создаём логотип сайта -->
+          <a class="logo" href="/">Logo</a>
+          <!-- С помощью списка создаём навигационное меню -->
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/price">Цены</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/services">Услуги</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/discounts">Скидки</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/contacts">Контакты</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/blog">Блог</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/about_us">О нас</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  <a>Цены.</a>
+</body>
+</html>
