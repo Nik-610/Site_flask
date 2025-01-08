@@ -1,0 +1,170 @@
+/* Определяем блочную модель */
+html {
+    box-sizing: border-box;
+   }
+   
+   *,
+   *::after,
+   *::before {
+    box-sizing: inherit;
+   }
+   
+   /* Убираем стандартное подчёркивание у ссылок */
+   a {
+    text-decoration: none;
+   }
+   
+   /* Устанавливаем минимальный размер экрана и добавляем фоновое изображение*/
+   body {
+    margin: 0;
+    background-color: #5988FF; /* Цвет фона веб-страницы */
+    min-height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-family: "Montserrat", sans-serif; /* Используем шрифт Montserrat */
+   }
+   
+   /* Стилизуем контейнер */
+   .container {
+    max-width: 1190px;
+    padding: 0 15px; /* Увеличиваем боковые отступы */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+   }
+   
+   /* Стилизуем шапку сайта */
+   .header {
+    background-color: black;
+    padding-top: 30px; /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
+   }
+   
+   /* Стилизуем внутренний контейнер шапки */
+   .header__inner {
+    display: flex; /* Выстраиваем элементы внутри контейнера в строку */
+    justify-content: space-between; /* Распределяем элементы по ширине контейнера */
+    align-items: center; /* Выравниваем элементы по вертикали */
+   }
+   
+   /* Стилизуем логотип */
+   .logo {
+    position: relative; /* Устанавливаем относительное позиционирование */
+    right: 325px;
+    bottom: 15px;
+    text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+    font-size: 28px; /* Устанавливаем размер шрифта */
+    font-weight: 900; /* Устанавливаем жирное начертание шрифта */
+    color: #ccebfd; /* Устанавливаем цвет логотипа */
+   }
+   
+   /* Стилизуем списки меню */
+   .menu__list {
+    position: relative; /* Устанавливаем относительное позиционирование */
+    right: 600px;
+    bottom: 15px;
+    display: flex; /* Отображаем элементы списка в строку */
+    list-style: none; /* Убираем стандартные маркеры (чёрные точки) */
+   }
+   
+   /* Стилизуем пункты меню */
+   .menu__list-item {
+    margin-right: 20px; /* Добавляем отступ между пунктами меню */
+   }
+   
+   /* Стилизуем ссылки в меню */
+   .menu__list-link {
+    padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
+    font-size: 20px; /* Уменьшаем размер шрифта */
+    color: #dcf5fe; /* Устанавливаем цвет ссылок */
+    cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
+    transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+   }
+   
+   /* Добавляем стилизацию ссылок в меню при наведении курсора */
+   .menu__list-link:hover {
+    color: #eb3e30; /* Задаём изменение цвета ссылок при наведении курсора */
+   }
+
+.bod {
+    font-family: Inter; /* Семейство шрифтов */
+    font-size: 15px; /* Размер основного шрифта в 
+  */
+    background-color: #5988FF; /* Цвет фона веб-страницы */
+    color: #333333; /* Цвет основного текста */ 
+}
+h1 {
+    color: #FD98FB; /* Цвет заголовка */
+    font-size: 30px; /* Размер шрифта в пунктах */
+    font-family: Georgia, serif; /* Семейство шрифтов */
+}
+p {
+    font-size: 30px;
+}
+
+.ser{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.ser1{
+    text-align: center;
+    color: #FD98FB;
+    font-weight: 900;
+}
+
+.ser2{
+    text-align: center;
+    color: #FD98FB;
+}
+
+.ser3{
+    font-size: 20px;
+}
+
+.im{
+    text-align: center;
+}
+
+
+@keyframes color-change {
+    0% {
+      color: #FD98FB;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: #FD98FB;
+    }
+}
+
+h1 {
+    animation: color-change 3s infinite;
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    color: lightslategrey;
+    background-color: black;
+    padding-top: 70px; /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
+}
+
+.tex{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+canvas {
+    position: fixed; /* Фиксированное положение, чтобы оставаться на месте */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Отключает взаимодействие с мышью */
+    z-index: 1000; /* Поверх всего */
+}
